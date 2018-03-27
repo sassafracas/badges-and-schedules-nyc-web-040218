@@ -22,8 +22,8 @@ def printer(name_array)
   final_print_array = []
   batch_badge_creator(name_array).each_index do |index|
     puts batch_badge_creator(name_array).shift(index)
-    assign_rooms(name_array).each do |index|
-      puts assign_rooms(name_array).shift
+    assign_rooms(name_array).each_index do |index|
+      puts assign_rooms(name_array).shift(index)
     end
   end
 end
