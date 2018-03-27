@@ -19,6 +19,11 @@ def assign_rooms(name_array)
 end
 
 def printer(name_array)
-    final_print_array = []
-    puts final_print_array = batch_badge_creator(name_array).zip(assign_rooms(name_array))
+  final_print_array = []
+  batch_badge_creator(name_array).each do |index|
+    puts batch_badge_creator(name_array).first
   end
+  assign_rooms(name_array).each do |index|
+    puts assign_rooms(name_array).first
+  end
+end
