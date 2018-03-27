@@ -21,9 +21,9 @@ end
 def printer
   final_print_array = []
   batch_badge_creator(name_array).each do |index|
-    puts batch_badge_creator(name_array)(index)
+    puts batch_badge_creator(name_array).first
   end
   assign_rooms(name_array).each do |index|
-    puts assign_rooms(name_array)(index)
+    puts assign_rooms(name_array).first
   end
 end
