@@ -11,6 +11,7 @@ badge_array
 end
 
 def assign_rooms(name_array)
+  room_assign_array = []
   name_array.each.with_index(1) do |name, index|
     room_assign_array << "Hello, #{name}! You'll be assigned to room #{index}!"
   end
